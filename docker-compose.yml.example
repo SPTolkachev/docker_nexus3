@@ -1,0 +1,10 @@
+version: "2.4"
+
+services:
+  nexus3:
+    container_name: sonatype_nexus
+    image: sonatype/nexus3
+    ports:
+      - "${HOSTPORT}:8081"
+    volumes:
+      - "${DIR_DATA}:/nexus-data"
