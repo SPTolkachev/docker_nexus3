@@ -18,7 +18,7 @@ cp docker-compose.yml.example docker-compose.yml
 ~$ nano .env
 ```
 
-4. Create dir `~/data/` (param `DIR_DATA` from `.env`).
+4. Create dir data (param `DIR_DATA` from `.env`).
 ```shell
 ~$ mkdir data
 ~$ sudo chmod 777 data
