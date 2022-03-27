@@ -4,7 +4,7 @@ Docker composition for Nexus 3 by Sonartype.
 ## Install and run
 1. Git clone.
 ```shell
-git clone https://github.com/SPTolkachev/docker_nexus3.git
+git clone git@github.com:SPTolkachev/docker_nexus3.git
 ```
 
 2. Create `docker-compose.yml` from `docker-compose.yml.example`.
@@ -18,10 +18,10 @@ cp docker-compose.yml.example docker-compose.yml
 ~$ nano .env
 ```
 
-4. Create dir data (param `DIR_DATA` from `.env`).
+4. Create dir `~/data/` (param `DIR_DATA` from `.env`).
 ```shell
 ~$ mkdir data
-~$ sudo chmode 777 data/
+~$ sudo chmod 777 data
 ```
 
 5. Pull docker image.
@@ -35,6 +35,11 @@ cp docker-compose.yml.example docker-compose.yml
 ```
 
 7. Open `HOSTPORT` (initial -- `localhost:8081`) from `.env` in your browser.
+
+
+## Config .env
+- `HOSTPORT` -- nexus' web interface host and port
+- `DIR_DATA` -- path to directory of data
 
 
 ## Sign in
